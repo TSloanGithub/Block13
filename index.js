@@ -5,8 +5,11 @@
  * @param {string} fahren temperature in degrees F
  * @returns {number} the number of degrees C
  */
-function convertToCelsius(fahren) {}
-
+// let fahren = prompt("Enter the temperature in Fahrenheit so that we can convert it to Celsius")
+function convertToCelsius(fahren) {
+  return (fahren - 32) * (5/9)
+}
+// let celc = convertToCelsius(fahren);
 /**
  * Takes both numbers (F, C) and display a message with
  * both numbers and how that temp makes you feel using
@@ -22,14 +25,30 @@ function convertToCelsius(fahren) {}
  * @param {number} fahren
  * @param {number} celc
  */
-function createMessage(fahren, celc) {}
+function createMessage(fahren, celc) {
+  if (fahren < 32){
+    console.log("very cold");
+  } else if (fahren < 64){
+    console.log("cold");
+  } else if (fahren < 86){
+    console.log("warm");
+  } if (fahren < 100){
+    console.log("hot");
+  }
+  }
 
 /**
  * Takes a number and returns a random integer from 0 to the limit
  * @param {number} limit
  * @returns {number} a number between 0 and the int passed in
  */
-function rand(limit) {}
+let limit = prompt(
+  "enter a number and I will randomly assign a number between 1 and your value"
+)
+function rand(limit) {
+  return Math.floor(Math.random() * (limit - 0))
+}
+rand(limit)
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
 
