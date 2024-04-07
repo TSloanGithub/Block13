@@ -42,9 +42,9 @@ function createMessage(fahren, celc) {
  * @param {number} limit
  * @returns {number} a number between 0 and the int passed in
  */
-let limit = prompt(
-  "enter a number and I will randomly assign a number between 1 and your value"
-)
+// let limit = prompt(
+//   "enter a number and I will randomly assign a number between 1 and your value"
+// )
 function rand(limit) {
   return Math.floor(Math.random() * (limit - 0))
 }
